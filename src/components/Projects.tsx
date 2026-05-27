@@ -44,28 +44,23 @@ const Projects: React.FC = () => {
             <h2 className="section-title">// projects</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
                 <ProjectCard
-                    title="masters thesis - optimization of deep learning models"
-                    description="exploring quantization, pruning, and knowledge distillation for edge devices. implementing data-free analytical solutions and multi-teacher architectures."
+                    title="masters thesis - quantization aware knowledge distillation"
+                    description="optimization of deep learning models via qakd. achieved sota on resnet-32 (cifar-100), outperforming sqakd and quantized feature distillation benchmarks."
                     tech={['pytorch', 'quantization', 'knowledge distillation']}
                 />
                 <ProjectCard
+                    title="virtue foundation - medical facility intelligence"
+                    description="ranked top 10 out of 3000+ applicants at mit hackathon; built an agentic rag system (faiss) to identify global medical deserts."
+                    tech={['rag', 'faiss', 'agentic ai']}
+                />
+                <ProjectCard
                     title="brain computer interfacing (fyp)"
-                    description="created a bci system acquiring eeg data to infer 6 unique brain signals with >88% accuracy using 1-d cnn on edge."
+                    description="implemented an eeg-based system using 1-d cnns for edge inference, achieving 88% accuracy on 6 unique brain signals."
                     tech={['bci', 'edge ai', 'cnn', 'python']}
                 />
                 <ProjectCard
-                    title="hardware aware quantum svm through nas"
-                    description="developed nas algorithm for quantum ansatz generation tailored for hardware, achieving ~90% accuracy on breast cancer dataset."
-                    tech={['quantum computing', 'nas', 'python']}
-                />
-                <ProjectCard
-                    title="quantization aware knowledge distillation"
-                    description="implemented qakd paper and extended research with multi-teacher configurations."
-                    tech={['model compression', 'research']}
-                />
-                <ProjectCard
-                    title="ai khaata"
-                    description="urdu voice inventory management chatbot with stt, sql generation, and tts."
+                    title="al khaata - urdu voice inventory management"
+                    description="engineered a voice chatbot with urdu stt/tts and automated sql query generation."
                     tech={['nlp', 'urdu', 'sql', 'python']}
                 />
             </div>
