@@ -10,6 +10,7 @@ const Header: React.FC = () => {
             </div>
             <nav style={{ display: 'flex', gap: '2rem' }}>
                 <a href="#portfolio" className="nav-link">//portfolio</a>
+                <a href="#blog" className="nav-link">//blog</a>
                 <a href="mailto:adil.mubashir@gmail.com" className="nav-link">//contact</a>
                 <a href="https://github.com/adil-mubashir-ch" target="_blank" rel="noopener noreferrer" className="nav-link">//github</a>
             </nav>
