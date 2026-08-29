@@ -74,7 +74,7 @@ export const BlogPost: React.FC = () => {
     return (
         <div className="container" style={{ marginTop: '2rem' }}>
             {/* Top Navigation */}
-            <nav style={{ marginBottom: '2rem' }}>
+            <nav style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
                 <Link
                     to="/"
                     style={{
@@ -94,6 +94,22 @@ export const BlogPost: React.FC = () => {
                     &larr; Back to Home
                 </Link>
             </nav>
+
+            {/* Series Link Banner */}
+            <div style={{
+                padding: '0.8rem 1.2rem',
+                marginBottom: '1.5rem',
+                borderRadius: '6px',
+                background: 'var(--card-bg)',
+                border: '1px solid var(--border-color)',
+                fontSize: '0.88rem'
+            }}>
+                <span style={{ fontWeight: 600 }}>🔥 Part 2 is out!</span>{' '}
+                Want to dive deeper into why 4 CPU cores didn't give a 4x speedup? Check out{' '}
+                <Link to="/blog/why-4-cores-arent-4x-faster" style={{ color: 'var(--text-color)', fontWeight: 600 }}>
+                    Part 2: Why 4 Cores Aren't 4x Faster: The Local LLM Memory Traffic Jam &rarr;
+                </Link>
+            </div>
 
             <article className="blog-post-page" style={{
                 border: '1px solid var(--border-color)',
@@ -364,6 +380,38 @@ gcc -Ofast -O3 -mcpu=cortex-a53 -march=armv8-a+simd -fopenmp -funroll-loops -flt
                 </div>
             </article>
 
+            {/* Bottom Series Link Banner */}
+            <div style={{
+                marginTop: '2rem',
+                padding: '1.2rem',
+                borderRadius: '8px',
+                background: 'var(--card-bg)',
+                border: '1px solid var(--border-color)',
+                textAlign: 'center'
+            }}>
+                <h4 style={{ margin: '0 0 0.5rem 0', fontSize: '1rem' }}>🚀 Read Part 2 of this Series</h4>
+                <p style={{ margin: '0 0 1rem 0', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                    Learn why adding 4 CPU cores only gave a 16.7% boost, how memory bandwidth creates the "Memory Wall", and how INT8 quantization bypasses it.
+                </p>
+                <Link
+                    to="/blog/why-4-cores-arent-4x-faster"
+                    style={{
+                        fontSize: '0.85rem',
+                        fontWeight: 600,
+                        color: 'var(--text-color)',
+                        textDecoration: 'none',
+                        border: '1px solid var(--border-color)',
+                        padding: '6px 16px',
+                        borderRadius: '4px',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px'
+                    }}
+                >
+                    Read Part 2: Why 4 Cores Aren't 4x Faster: The Local LLM Memory Traffic Jam &rarr;
+                </Link>
+            </div>
+
             {/* Bottom Navigation */}
             <div style={{ marginTop: '2rem', textAlign: 'center' }}>
                 <Link
@@ -382,7 +430,7 @@ gcc -Ofast -O3 -mcpu=cortex-a53 -march=armv8-a+simd -fopenmp -funroll-loops -flt
                         background: 'var(--bg-color)'
                     }}
                 >
-                    &larr; Back to Home Portfolio
+                    &larr; Back to Home
                 </Link>
             </div>
         </div>
