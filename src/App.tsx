@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Experience from './components/Experience'
 import Publications from './components/Publications'
+import Achievements from './components/Achievements'
 import Projects from './components/Projects'
 import Blog from './components/Blog'
 import BlogPost from './components/BlogPost'
@@ -28,6 +29,7 @@ function HomePage() {
       <About />
       <Experience />
       <Publications />
+      <Achievements />
       <Projects />
       <Blog />
     </div>

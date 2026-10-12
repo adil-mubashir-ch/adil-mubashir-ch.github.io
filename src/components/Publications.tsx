@@ -32,6 +32,16 @@ const Publications: React.FC = () => {
         <section id="publications">
             <h2 className="section-title">// publications</h2>
             <Publication
+                title="progressive multi-ancestor bit-depth distillation"
+                venue="submitted to ieee icassp · arxiv:2610.04100"
+                year="2026"
+                link="https://arxiv.org/abs/2610.04100"
+                description={[
+                    "formulated pmabd, a novel multi-stage quantization framework that aggregates ancestor teacher knowledge to stabilize low-bit model compression (w2a2/w4a4).",
+                    "outperformed state-of-the-art compression methods across resnet and mobilenet architectures on cifar and tiny-imagenet benchmarks.",
+                ]}
+            />
+            <Publication
                 title="hardware-aware neural architecture search for qsvm"
                 venue="arxiv:2604.07856"
                 year="2026"
